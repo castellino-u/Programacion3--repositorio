@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programaciòn 3</title>
+</head>
+<body>
+
+    <header>
+        <h1>Encabezado principal. </h1>
+        <nav>
+            <ul>
+                <li> <a href="#estructura1">Ir a Estructura.</a></li>
+                <li><a href="#multimedia1">Ir a multimedia.</a></li>
+                <li><a href="#formulario1">Ir a Formulario.</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 id="estructura1"> 1. Estructura Basica Del Cocumento HTML</h2>
+            <p>
+                Este doumento HTML tiene una estructura basica que incluye DOCTYPE, etiquetas de metadatos y un tìtulo. 
+                
+            </p>
+            
+        </section>
+
+        <section>
+            <h2> <i>2. Encabezados y Propiedades del texto </i></h2>
+            <p>
+                <b>Este es un texto en negrita. </b> <br>
+                <i>Este es un texto en cursiva.</i> <br>
+                <strike>Este es un texto tachado. </strike> <br>
+            </p>
+            
+        </section>
+        
+        <section>
+            <h2>3. Divisiones y Agrupaciòn de contenido.</h2>
+            <div>
+                <h4>Secciòn 1</h4>
+                <p>
+                    Contenido de la primera secciòn agrupada en un div.
+                </p>
+                
+                <h4>Secciòn 2</h4>
+                <p>
+                    Contenido de la segunda seccion agrupada en un div.
+                </p>
+                
+            </div>
+        </section>
+        
+        <section>
+            <h2>4. Enlaces y listas.</h2>
+            <p>
+                Visita nuestro contenido multimedia en <a href="https://www.youtube.com/watch?v=tQk3r-2uGro" target="_blank"> youtube</a> para 
+                conocernos mejor. 
+            </p>
+            
+            <h4>Enlaces internos: </h4>
+            <ul>
+                <li> <a href="#estructura1">Ir a Estructura.</a></li>
+                <li><a href="#multimedia1">Ir a multimedia.</a></li>
+                <li><a href="#formulario1">Ir a Formulario.</a></li>
+            </ul>
+            
+            <h4>Lista desornada: </h4>
+            <ul>
+                <li>Primer item de una lista desordenada.</li>
+                <li>Segundo item de una lista desprdenada.</li>
+            </ul>
+            
+            <h4>Lista ordenada: </h4>
+            <ol>
+                <li>Primer elemento de una lista ordenada. </li>
+                <li>Segundo elemento de una lista desordenada.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2 id="multimedia1">5. Elementos multimedia. </h2>
+            
+            <img src="Contenido multimedia/utn-img.jpg" alt="UTN - Facultad Regional de Mendoza." height="300" width="400">
+            <video src="Contenido multimedia/utn-video.mp4" controls height="300" width="400"></video>
+            <audio src="Contenido multimedia/audio-utn.m4a" controls></audio>
+        </section>
+        
+        <section>
+            <h2>6. Tablas</h2>
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <!--Voy a agregar una nueva fila para probar que tal-->
+                    <tr>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>    
+            <h2>7. Formularios</h2>
+            <form id="formulario1"  >
+                <label>Nombre: </label>
+                <input type="text"> 
+                
+                <label>Email: </label>
+                <input type="email" placeholder="example@example.com" > 
+                
+                <label>Mensaje: </label>
+                <input type="text">
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>        
+            
+        </main>
+        
+    <footer>
+        <p>2024 Trabajo práctico de HTML</p>
+    </footer>
+</body>
+</html>
