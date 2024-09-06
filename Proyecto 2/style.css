@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+hr {
+    border: none; /* Elimina el borde por defecto */
+    height: 1px; /* Altura de la línea */
+    background-color: #000; /* Color de la línea */
+}
+
+main{
+    background-color: rgb(192, 180, 180);
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 20px;
+}
+
+section{
+    background-color: rgb(226, 219, 219);
+    border-radius:5px;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.propiedades-texto > p{
+    text-decoration: underline;
+}
+
+.bloque-cita{
+    background-color: rgb(237, 235, 235);
+    border-left: 5px solid rgb(219, 219, 219);
+    padding: 15px;
+}
+
+.propiedades-caja > div{
+    height:20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.801);
+}
+
+.caja1{
+    background-color: rgb(49, 50, 90);
+    border: #000 solid 1px;
+}
+
+.caja2{
+    background-color: rgb(101, 255, 145);
+    border: #000 solid 3px;
+}
+
+.posición-relativa-absoluta{
+    padding-bottom: 60px;
+}
+
+.posición-relativa-absoluta div{
+    border-radius: 5px;
+}
+
+.relativo{
+    position: relative;
+    background-color: rgb(237, 190, 90);
+    padding: 15px;
+}
+
+.absoluto{
+    position: absolute;
+    background-color: rgb(13, 177, 87);;
+    color: white;
+    padding: 10px;
+    right: 0;
+    top: 35px;
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.grid-item{
+    background-color: rgb(232, 183, 38);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: #ff7979;
+    transition: background-color 0.5s ease; /* Transición para el cambio de color */
+    border: 2px solid #de7272;
+}
+
+/* Cambio de color en hover */
+.animacion:hover {
+    background-color: #315476;
+}
+
+.mover {
+    width: 150px;
+    height: 150px;
+    background-color: #7cbce7;
+    border: 2px solid #94ffb7;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+/* Animación para mover el div de izquierda a derecha */
+@keyframes movimiento-lateral {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 150px); /* Ajuste para mover de izquierda a derecha */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.mover {
+    animation: movimiento-lateral 4s infinite linear;
+}
