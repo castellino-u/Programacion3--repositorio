@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>Tp 3</h1>
+
+    <div id="contenedor-parrafos">
+    <p>Este es el primer párrafo.</p>
+    <p>Este es el segundo párrafo.</p>
+    <p>Este es el tercer párrafo.</p>
+   </div>
+
+    <button id="boton-color">cambiar de color a azul</button>
+
+    <h2>Formulario</h2>
+
+   
+    <form id="formulario">
+        <label for="texto">Ingrese algo:</label>
+        <input type="text" id="texto" name="texto">
+        <button type="button" id="btn-mostrar-valor">Mostrar valor</button>
+    </form>
+    
+    <ul id="mi-lista">
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+  </ul>
+
+  <h2>Controlar Campo de Texto</h2>
+
+    <input type="text" id="mi-texto" placeholder="Escribe algo aquí">
+    <button id="btn-deshabilitar">Deshabilitar</button>
+    <button id="btn-habilitar">Habilitar</button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+
+  <h2>Formulario de Correo Electrónico</h2>
+
+    <form id="form-correo">
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <button type="submit">Guardar</button>
+    </form>
+
+    <div id="correo-mostrado"> </div>
+</html>
